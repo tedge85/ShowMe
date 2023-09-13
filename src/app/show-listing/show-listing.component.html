@@ -1,0 +1,9 @@
+<div class="container">
+  <form>
+    <input type="text" #filter>
+    <button class="primary" type="button" (click)="filterResults(filter.value)">Search</button>
+  </form>
+  <section class="results">
+    <app-show *ngFor="let show of filteredShowsList" [show]="show"></app-show> <!-- link this property binding to film service,p plus filtered list - search component? -->
+  </section>
+</div>
