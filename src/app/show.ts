@@ -6,4 +6,6 @@ export interface Show {
   description: string;
   platform: string;
   id: number;
+  link_name: string;
+  rotten_tomatoes: number
 }

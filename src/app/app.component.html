@@ -1,46 +1,39 @@
-<body>
-  <div class="header">
-    <div class="container">
-      <img src="img/logo.svg" width="180" height="34" />
-    </div>
-  </div>
+<!-- TO-DO: 
+  - / get rid of title after each pic 
+  - separate the following into compnenets and add tag to...
+        - / header (app)
+        - / footer (app)
+        - / home component, including 'get started' (app) [make - PDF]
+        * 'more' component (list) [make, featuring BACK option - PDF]
+        ** break points
 
-  <div class="main">
-    <div class="container">
-      <div class="content">
-        <app-show-listing listing="show"></app-show-listing>
-      </div>
-    </div>
-  </div>
-  <div class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <h3>Bolt</h3>
-          <ul>
-            <li>Careers</li>
-            <li>Terms</li>
-            <li>Help</li>
-          </ul>
-        </div>
-        <div class="col-md-3">
-          <h3>More Bolt</h3>
-          <ul>
-            <li>Gift Cards</li>
-            <li>Trailers</li>
-          </ul>
-        </div>
-        <div class="col-md-3">
-          <h3>News</h3>
-          <ul>
-            <li>Blog</li>
-            <li>Twitter</li>
-            <li>YouTube</li>
-            <li>Google+</li>
-            <li>Facebook</li>
-          </ul>
+  - / search functionality (YT/SB)
+  - / header links - home, search
+  - / route: home, get started, listing, more (YT/SB)
+  
+  -FInal details:
+   ** - extend film library
+   ** images for each film
+    - //! links to streaming provider? - is there a way to make the image appear as part of a function (*ngIf="addPic(show)")       
+   - streaming platform images resize
+    -- /attach image to other rows - take out text thing?
+    -- /move 'results for' line down
+    - /header logo - add to assets
+    - /footer: change social media text/logos
+
+  -->
+
+  <body>
+    <app-header>
+    </app-header>
+    <div class="main">
+      <div class="container">
+        <div class="content">
+          <router-outlet></router-outlet>
         </div>
       </div>
     </div>
-  </div>
-</body>
+    <app-footer>
+    </app-footer>
+  </body>
+  

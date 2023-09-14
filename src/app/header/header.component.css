@@ -1,0 +1,36 @@
+a {
+  color: white;
+  text-decoration: none
+}
+
+.column {
+    width: 5rem;
+    height: 5rem;
+}
+
+.header {
+  background: #000;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 90%;
+  display: flex;
+  justify-content: center;
+}
+
+.header li {
+  display: inline-block;
+  margin-right: 2rem;
+  color: white;
+}
+
+.row {
+  text-align: center;
+}
+

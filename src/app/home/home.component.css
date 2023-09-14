@@ -1,0 +1,9 @@
+.column {
+    width: 10rem;
+    height: 10rem;
+}
+
+#logo {
+    position: relative;
+    left: 0;
+}

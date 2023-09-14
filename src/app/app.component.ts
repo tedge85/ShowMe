@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { ShowListingComponent } from './show-listing/show-listing.component';
-import { ShowComponent } from './show/show.component';
 
 @Component({
   selector: 'app-root',
@@ -10,3 +8,4 @@ import { ShowComponent } from './show/show.component';
 export class AppComponent {
   title = 'ShowMe';
 }
+
