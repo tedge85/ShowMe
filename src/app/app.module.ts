@@ -10,7 +10,7 @@ import { ShowsService } from './shows.service';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
-import { MoreComponent } from './show/more/more.component';
+import { MoreComponent } from './more/more.component';
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({

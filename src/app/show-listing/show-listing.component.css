@@ -31,6 +31,10 @@ input[type="text"] {
   flex-wrap: wrap;
 }
 
+#noSearchResultsFor {
+  margin: 2rem;
+}
+
 @media (max-width: 577px) {
   .btn-group {
     flex-direction: column;
@@ -49,9 +53,15 @@ input[type="text"] {
   }
   input[type="text"] {
       width: 90%;
-  }   
+  }
+}   
 
+@media (max-width: 577px) {
+  .search-bar {
+    padding-top: 0;
+  }
 }
+
 @media (min-width: 769px) {
   .results {
       grid-template-columns: repeat(3, 1fr);

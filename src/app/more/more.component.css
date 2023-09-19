@@ -1,0 +1,23 @@
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn {
+    position: absolute;
+    left: 2rem;
+}
+
+.card-subtitle {
+    color: grey;
+}
+
+.list-group-item-img {
+    text-decoration: none;
+}
+
+@media (max-width: 577px) {
+    .card {
+        width: 12rem;
+    }   
+}

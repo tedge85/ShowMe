@@ -12,9 +12,6 @@
   padding-left: 15px;
 }
 
-#picBox {
-  margin-bottom: 1%;
-}
 
 .series_img img {
   display: block;  
@@ -54,4 +51,6 @@
     padding-right:10px;
 }
 
-@media
+#picBox img:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,29 @@
+<div class="row">
+    <div class="col">
+        <button type="button" class="btn btn-secondary"><a [routerLink]="['/shows']">back</a></button>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col align-self-start text-center">
+            <div class="card text-bg-dark">
+                <img class="card-img-top img-fluid" [src]="show.series_img">
+            </div>
+        </div>
+        <div class="col align-self-start">
+            <div class="card text-bg-dark">
+                <div class="card-body">
+                <h5 class="card-title">{{ show.series }}</h5>
+                <h6 class="card-subtitle">{{ show.number_of_seasons }} seasons</h6>
+                <p class="card-text">{{ show.description }}</p>
+                <h6 class="card-text"><i>Rotten Tomatoes score: {{ show.rotten_tomatoes / 100 | percent:'1.0-0' }}</i></h6>
+                <ul class="list-unstyled" >
+                    <li><a href="https://www.rottentomatoes.com/tv/{{show.link_name}}"><img class="img-fluid" src="https://www.rottentomatoes.com/assets/pizza-pie/head-assets/images/RT_TwitterCard_2018.jpg"></a></li>    
+                    <li *ngIf="show.platform == 'Netflix'"><a href="https://www.netflix.com/watch/{{show.series}}]"><img class="img-fluid" src="https://i.pcmag.com/imagery/reviews/05cItXL96l4LE9n02WfDR0h-5.fit_scale.size_760x427.v1582751026.png"></a></li>
+                    <li *ngIf="show.platform == 'Prime'"><a href="https://www.amazon.co.uk/gp/video/primesignup"><img class="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Amazon_Prime_Video_logo.svg/2560px-Amazon_Prime_Video_logo.svg.png"></a></li>
+                    <li *ngIf="show.platform == 'Disney Plus'"><a href="https://www.disneyplus.com/"><img class="img-fluid" src="https://lumiere-a.akamaihd.net/v1/images/disney_logo_nov_2021_rbg_0fa74b54.jpeg"></a></li>
+                </ul>                
+            </div>    
+        </div>
+    </div>
+</div>

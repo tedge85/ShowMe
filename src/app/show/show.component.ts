@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Show } from '../show';
 import { ActivatedRoute, Router} from '@angular/router';
+import { ShowsService } from '../shows.service';
 
 @Component({
   selector: 'app-show',
@@ -9,12 +10,8 @@ import { ActivatedRoute, Router} from '@angular/router';
 })
 export class ShowComponent {
   @Input() show!: Show;
-  constructor(private route: ActivatedRoute, private router: Router) { }
+  constructor(private route: ActivatedRoute, private router: Router, private showService: ShowsService) { }
 ngOnInit(): void {
   }
-more(id: number){
-  console.log('Navigating to more with id:', id);
-  this.router.navigate(['more', id], {relativeTo:this.route});
 }
 
-}

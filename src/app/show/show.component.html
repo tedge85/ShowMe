@@ -1,6 +1,7 @@
 <div class="row">
   <div id="picBox" class="col-md-3 series_img">
-    <img (click)="more(show.id)" [src]="show.series_img">
+    <router-outlet></router-outlet>
+    <img [routerLink]="['/more', show.id]" [src]="show.series_img"> 
   </div>
 
   <div class="col-md-3">

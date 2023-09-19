@@ -104,8 +104,74 @@ export class ShowsService {
       "id": 9,
       "link_name": "loki",
       "rotten_tomatoes": 92
-    }
-  ]
+    },
+    {
+    "series": "Breaking Bad",
+    "series_img": "https://m.media-amazon.com/images/M/MV5BYmQ4YWMxYjUtNjZmYi00MDQ1LWFjMjMtNjA5ZDdiYjdiODU5XkEyXkFqcGdeQXVyMTMzNDExODE5._V1_.jpg",
+    "genre": "Crime, Drama, Thriller",
+    "number_of_seasons": 5,
+    "description": "A high school chemistry teacher turned methamphetamine manufacturing drug dealer teams with a former student.",
+    "platform": "Netflix",
+    "id": 10,
+    "link_name": "breaking_bad",
+    "rotten_tomatoes": 96
+  },
+  {
+    "series": "The Marvelous Mrs. Maisel",
+    "series_img": "https://m.media-amazon.com/images/M/MV5BOWFjODRhMDktMTE3My00ODQzLThmODctYmM2ZmU5YmY0ZGVkXkEyXkFqcGdeQXVyMjkwOTAyMDU@._V1_FMjpg_UX1000_.jpg",
+    "genre": "Comedy, Drama",
+    "number_of_seasons": 4,
+    "description": "A housewife in the 1960s decides to become a stand-up comic.",
+    "platform": "Prime",
+    "id": 11,
+    "link_name": "the_marvelous_mrs_maisel",
+    "rotten_tomatoes": 88
+  },
+  {
+    "series": "Wandavision",
+    "series_img": "https://m.media-amazon.com/images/M/MV5BZGEwYmMwZmMtMTQ3MS00YWNhLWEwMmQtZTU5YTIwZmJjZGQ0XkEyXkFqcGdeQXVyMTI5MzA5MjA1._V1_.jpg",
+    "genre": "Drama, Fantasy, Sci-Fi",
+    "number_of_seasons": 1,
+    "description": "Blends the style of classic sitcoms with the MCU, in which Wanda Maximoff and Vision - two super-powered beings living their ideal suburban lives - begin to suspect that everything is not as it seems.",
+    "platform": "Disney Plus",
+    "id": 12,
+    "link_name": "wandavision",
+    "rotten_tomatoes": 91
+  },
+  {
+    "series": "Money Heist",
+    "series_img": "https://m.media-amazon.com/images/M/MV5BODI0ZTljYTMtODQ1NC00NmI0LTk1YWUtN2FlNDM1MDExMDlhXkEyXkFqcGdeQXVyMTM0NTUzNDIy._V1_FMjpg_UX1000_.jpg",
+    "genre": "Action, Crime, Drama",
+    "number_of_seasons": 5,
+    "description": "An unusual group of robbers attempt to carry out the most perfect robbery in Spanish history - stealing 2.4 billion euros from the Royal Mint of Spain.",
+    "platform": "Netflix",
+    "id": 13,
+    "link_name": "money_heist",
+    "rotten_tomatoes": 81
+  },
+  {
+    "series": "The Expanse",
+    "series_img": "https://m.media-amazon.com/images/M/MV5BZDVmMDljM2QtZDkzZC00ZDg2LWFiMGItZjNiNjliZjg2MGEzXkEyXkFqcGdeQXVyMjkwOTAyMDU@._V1_FMjpg_UX1000_.jpg",
+    "genre": "Drama, Mystery, Sci-Fi",
+    "number_of_seasons": 6,
+    "description": "In the 24th century, a disparate band of antiheroes unravel a vast conspiracy that threatens the Solar System's fragile state of cold war.",
+    "platform": "Prime",
+    "id": 14,
+    "link_name": "the_expanse",
+    "rotten_tomatoes": 93
+  },
+  {
+    "series": "The Falcon and the Winter Soldier",
+    "series_img": "https://m.media-amazon.com/images/M/MV5BODNiODVmYjItM2MyMC00ZWQyLTgyMGYtNzJjMmVmZTY2OTJjXkEyXkFqcGdeQXVyNzk3NDUzNTc@._V1_.jpg",
+    "genre": "Action, Adventure, Drama",
+    "number_of_seasons": 1,
+    "description": "Following the events of 'Avengers: Endgame,' Sam Wilson/Falcon and Bucky Barnes/Winter Soldier team up in a global adventure that tests their abilities -- and their patience.",
+    "platform": "Disney Plus",
+    "id": 15,
+    "link_name": "the_falcon_and_the_winter_soldier",
+    "rotten_tomatoes": 89
+  }
+]
 
     getAllShows(): Show[] {
       return this.showsList;
@@ -113,5 +179,15 @@ export class ShowsService {
 
     getShowById(id: number): Show | undefined {
       return this.showsList.find(show => show.id === id);
+    }
+
+    private show!: Show;
+    
+    setShow(show: Show) {
+      this.show = show;
+    }
+
+    getShow() {
+      return this.show;
     }
 }

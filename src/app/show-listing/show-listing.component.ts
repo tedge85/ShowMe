@@ -18,6 +18,7 @@ constructor(private showsService: ShowsService) {
   }
 
   filterResults(text: string) {
+    this.searchText = text;
     if (!text) {
       this.filteredShowsList = this.showsList;
     }

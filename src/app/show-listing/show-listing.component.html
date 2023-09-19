@@ -16,10 +16,12 @@
     <label class="btn btn-outline" for="btnradio4">Disney Plus</label>
   </div>
   <div class="container -sm">
-    <p id="searchResultsFor" *ngIf="filter.value !== ''">Search results for '{{ filter.value }}'</p>
+    <p id="searchResultsFor" *ngIf="filter.value !== ''">Search results for '{{ filter.value }}':</p>
+      <div class="alert alert-danger" role="alert" id="noSearchResultsFor" *ngIf="filteredShowsList.length == 0">
+        Sorry, '{{ searchText }}' cannot be found.
+      </div>
   </div>
   <section class="results">
     <app-show *ngFor="let show of filteredShowsList" [show]="show"></app-show>
-    <router-outlet></router-outlet>
   </section>
 </div>
