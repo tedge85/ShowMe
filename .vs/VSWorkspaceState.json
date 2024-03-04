@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\docs",
+    "\\src"
   ],
-  "SelectedNode": "\\C:\\Users\\User\\Source\\Repos\\tedge85\\ShowMe",
+  "SelectedNode": "\\docs\\index.html",
   "PreviewInSolutionExplorer": false
 }

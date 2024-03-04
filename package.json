@@ -28,6 +28,7 @@
     "@angular/cli": "~16.2.0",
     "@angular/compiler-cli": "^16.2.2",
     "@types/jasmine": "~4.3.5",
+    "angular-cli-ghpages": "^2.0.0-beta.2",
     "jasmine-core": "~5.1.1",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
@@ -37,7 +38,7 @@
     "typescript": "~5.1.6"
   },
   "styles": [
-  "node_modules/bootstrap/dist/css/bootstrap.min.css",
-  "src/styles.css"
+    "node_modules/bootstrap/dist/css/bootstrap.min.css",
+    "src/styles.css"
   ]
 }
